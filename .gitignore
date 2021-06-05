@@ -5,3 +5,4 @@ modern.json*
 .sencha
 /ext*
 /packages/package-loader/build
+/node_modules

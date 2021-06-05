@@ -12,6 +12,6 @@
         "classpath": "${package.dir}/src",
         "framework": "ext",
         "sass": null,
-        "output": "${package.dir}/build"
+        "output": "${package.dir}/../../build"
     }
 }

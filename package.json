@@ -1,0 +1,50 @@
+{
+  "name": "@coon-js/extjs-package-loader",
+  "sencha": {
+    "type": "code",
+    "creator": "Sencha",
+    "summary": "Dynamic package loader",
+    "detailedDescription": "This package provides a mechanism to load additional code packages at runtime",
+    "version": "1.0.0",
+    "compatVersion": "1.0.0",
+    "format": "1",
+    "local": true,
+    "classpath": "${package.dir}/src",
+    "framework": "ext",
+    "sass": null,
+    "output": "${package.dir}/build"
+  },
+  "description": "Ext JS Dynamic Package Loader",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "cd ./packages/package-loader && npx sencha config -prop output=../../build then package build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coon-js/extjs-package-loader.git"
+  },
+  "keywords": [
+    "package",
+    "loader",
+    "sencha",
+    "extjs",
+    "fork",
+    "npm",
+    "coon.js",
+    "coon-js",
+    "l8",
+    "l8js",
+    "l8.js"
+  ],
+  "author": "Sencha",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/coon-js/extjs-package-loader/issues"
+  },
+  "homepage": "https://github.com/coon-js/extjs-package-loader#readme",
+  "devDependencies": {
+    "@sencha/cmd": "^7.4.39"
+  }
+}

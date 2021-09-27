@@ -19,7 +19,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "cd ./packages/package-loader && npx sencha config -prop output=../../build then package build"
+    "build": "cd ./packages/package-loader && npx sencha config -prop output=../../build then package build",
+    "postversion": "git push && git push --tags"
   },
   "repository": {
     "type": "git",

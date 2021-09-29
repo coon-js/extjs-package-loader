@@ -18,7 +18,10 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
+      - run: npm config set @sencha:registry https://npm.sencha.com/
+      - run: npm config set //npm.sencha.com/:_authToken=${{ secrets.SENCHA_ACCESS_TOKEN }}
       - run: npm ci --ignore-scripts
+        
 
   release_git:
     needs: build

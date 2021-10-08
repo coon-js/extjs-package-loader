@@ -20,8 +20,13 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "npx node-git-hooks",
     "build": "cd ./packages/package-loader && npx sencha config -prop output=../../build then package build",
-    "postversion": "git push && git push --tags"
+    "postversion": "git push && git push --tags",
+    "release": "standard-version",
+    "release:patch": "standard-version --release-as patch && npm run postversion",
+    "release:minor": "standard-version --release-as minor && npm run postversion",
+    "release:major": "standard-version --release-as major && npm run postversion"
   },
   "repository": {
     "type": "git",
@@ -47,6 +52,10 @@
   },
   "homepage": "https://github.com/coon-js/extjs-package-loader#readme",
   "devDependencies": {
-    "@sencha/cmd": "^7.4.39"
+    "@sencha/cmd": "^7.4.39",
+    "node-git-hooks": "^1.0.6",
+    "@commitlint/cli": "^13.2.0",
+    "@commitlint/config-conventional": "^13.2.0",
+    "standard-version": "^9.3.1"
   }
 }

@@ -1,4 +1,5 @@
-# @coon-js/extjs-package-loader
+# @coon-js/extjs-package-loader ![MIT](https://img.shields.io/npm/l/@coon-js/extjs-package-loader) [![npm version](https://badge.fury.io/js/@coon-js%2Fextjs-package-loader.svg)](https://badge.fury.io/js/@coon-js%2Fextjs-package-loader)
+
 This npm-package provides access to Ext.Package in an NPM environment.
 It contais the original/forked package loader from [sencha](https://sencha.com) with an additional ```package.json```
 to make sure it can be identified as a [npm](https://npmjs.org)-package.
@@ -6,10 +7,8 @@ to make sure it can be identified as a [npm](https://npmjs.org)-package.
 ## Installation
 
 Using npm:
-``` 
-npm i --save-dev @coon-js/extjs-package-loader
-// or
-npm i -g @coon-js/extjs-package-loader 
+```bash
+$ npm i --save-dev @coon-js/extjs-package-loader
 ```
 
 ## Usage
@@ -19,7 +18,7 @@ When you're in the need of this package, you're most likely working in an enviro
 available. If you have access to the [Ext.Loader](https://docs.sencha.com/extjs/7.4.0/classic/Ext.Loader.html)-configuration, 
 you can configure it with the following paths:
 
-```
+```javascript
 Ext.Loader.setPath("Ext.Package", "./node_modules/@coon-js/extjs-package-loader/packages/package-loader/src/Package.js");
 Ext.Loader.setPath("Ext.package", "./node_modules/@coon-js/extjs-package-loader/packages/package-loader/src/package");
 ```
@@ -28,8 +27,8 @@ Ext.Loader.setPath("Ext.package", "./node_modules/@coon-js/extjs-package-loader/
 The following will create a ```build```-folder inside the root-folder of this package
 and place a ```package-loader.js``` and ```package-loader-debug.js``` into it:
 
-``` 
-npm run build 
+```bash
+$ npm run build 
 ```
 
 Further information related to dynamic package loading can be found here: https://github.com/sencha/package-loader

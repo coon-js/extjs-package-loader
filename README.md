@@ -1,4 +1,4 @@
-# @coon-js/extjs-package-loader ![MIT](https://img.shields.io/npm/l/@coon-js/extjs-package-loader) [![npm version](https://badge.fury.io/js/@coon-js%2Fextjs-package-loader.svg)](https://badge.fury.io/js/@coon-js%2Fextjs-package-loader)
+# @coon-js/extjs-package-loader [![npm version](https://badge.fury.io/js/@coon-js%2Fextjs-package-loader.svg)](https://badge.fury.io/js/@coon-js%2Fextjs-package-loader)
 
 This npm-package provides access to Ext.Package in an NPM environment.
 It contais the original/forked package loader from [sencha](https://sencha.com) with an additional ```package.json```

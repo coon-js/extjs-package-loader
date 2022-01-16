@@ -1,4 +1,11 @@
-The source code of the Package-Loader contained in this package is subject to the license provided by Sencha.
+The source code of the Package-Loader contained in this package is subject to the license provided by Sencha:
+
+============================
+Licensed under the same terms as your Ext JS copy.
+
+&copy; 2016 Sencha Inc.
+============================
+
 
 All other code is licensed under the
 

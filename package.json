@@ -16,7 +16,7 @@
     "output": "${package.dir}/build"
   },
   "description": "Ext JS Dynamic Package Loader",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
